@@ -12,3 +12,4 @@ document.querySelectorAll('.nav-menu a').forEach(function(link) {
         navMenu.classList.remove('active');
     });
 });
+

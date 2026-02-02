@@ -64,9 +64,20 @@ section {
 
 h1 { margin-bottom: 0.25rem; }
 h2 { margin-bottom: 0.5rem; font-size: 1.25rem; }
-h3 { font-size: 1rem; margin-bottom: 0.25rem; }
+h3 { font-size: 1rem; margin-bottom: 0.25rem; margin-top: 1rem; }
+h3:first-child { margin-top: 0; }
 p { margin-bottom: 0.75rem; }
 p:last-child { margin-bottom: 0; }
+
+/* Content lists */
+.section-content ul:not(.partners-list),
+.section-content ol {
+    margin: 0.5rem 0 1rem 1.5rem;
+}
+
+.section-content li {
+    margin-bottom: 0.25rem;
+}
 
 /* Nav */
 nav {
@@ -83,6 +94,10 @@ nav {
     display: block;
 }
 
+.nav-logo:focus {
+    outline: none;
+}
+
 .nav-logo img {
     height: 40px;
     width: auto;
@@ -95,10 +110,15 @@ nav {
     background: #fff;
     font-family: Georgia, Times, "Times New Roman", serif;
     cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
 .nav-toggle:hover {
-    background: #f59e0b;
+    background: #ffe135;
+}
+
+.nav-toggle:focus {
+    outline: none;
 }
 
 .nav-menu {
@@ -116,10 +136,15 @@ nav {
     color: #000;
     min-width: 100px;
     text-align: center;
+    transition: background-color 0.2s ease;
 }
 
 .nav-menu a:hover {
-    background: #f59e0b;
+    background: #ffe135;
+}
+
+.nav-menu a:focus {
+    outline: none;
 }
 
 /* Hero */
@@ -152,6 +177,10 @@ nav {
 
 .section-header h2 {
     margin: 0;
+}
+
+.section-header h2.highlight {
+    color: #dc2626;
 }
 
 .section-content {
